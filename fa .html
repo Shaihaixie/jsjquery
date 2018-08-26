@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+			}
+			
+			#zhuye {
+				position: fixed;
+				width: 100%;
+				height: 100%;
+			}
+			
+			#div0 {
+				width: 100%;
+				height: 25px;
+				display: flex;
+				background-color: darkgrey;
+				color: white;
+			}
+			
+			#div1 {
+				display: flex;
+				justify-content: flex-start;
+				align-items: flex-start;
+			}
+			
+			#div12 {
+				float: left;
+				position: absolute;
+				right: 10px;
+				top: 0px;
+			}
+			
+			#dianchi {
+				background-color: white;
+				height: 20px;
+				width: 0px;
+				border-radius: 1px;
+				text-align: center;
+				color: green;
+				font-size: 15px;
+			}
+			
+			#div01 {
+				display: flex;
+				background-color: darkgrey;
+			}
+			
+			#div03 {
+				display: flex;
+			}
+			
+			#div02 {
+				/*display: flex;
+				flex-direction: column;*/
+				overflow:auto;
+			}
+			
+			.div02 {
+				height: 50px;
+				border: 1px blanchedalmond solid;
+				display: flex;
+			}
+			
+			.div02 img {
+				height: 50px;
+			}
+			
+			.text {
+				font-family: "微软雅黑";
+				font-size: 13px;
+				color: grey;
+				white-space:nowrap;  
+			}
+			
+			.pic02 img {
+				width: 50px;
+			}
+			
+			#div03 {
+				display: flex;
+				justify-content: space-between;
+				background-color:darkgrey;
+			}
+			
+			.shijain {
+				color: grey;
+				font-family: "微软雅黑";
+				font-size: 13px;
+			}
+			.xiao{
+				position: absolute;
+				right: -5px;
+				top: 7px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="zhuye">
+			<div id="div0">
+				<div id="div1" style="flex-basis:50%; ">
+					4G <img style="height: 15px;" src="img/信号.png" /> 4G <img style="height: 15px;" src="img/信号.png" />
+				</div>
+				<div id="div11" style="flex-basis:40%; "></div>
+				<div id="div12" style="flex-basis: 8%; width: 26px;border: 1px solid white;">
+					<div id="dianchi">
+						0%
+					</div>
+					 <span class="xiao" style="height: 5px;width: 3px;   flex-basis: 2%; border: 1px solid white;"></span>
+				</div>
+			</div>
+			<div id="div01">
+				<div style="flex-basis: 90%;">微信(291)</div>
+				<div><img style="height: 20px;flex-basis: 5%;" src="img/搜索.png" /></div>
+				<div><img style="height: 22px;flex-basis: 5%;" src="img/加.png" /></div>
+			</div>
+			<div id="div02" style="height:463px;">
+				<div class="div02" >
+					<div style="flex-basis: 18%;"> <img src="img/头像 男孩.png" /></div>
+					<div class="xingxi" style="flex-basis: 80%;">都妃旗舰店
+						<p class="text" style="text-overflow: ellipsis;">下午好，我们欢迎你的加入
+						</p>
+					</div>
+					<div class="shijain"> 18:30</div>
+				</div>
+				<div class="div02" >
+					<div style="flex-basis: 18%;"> <img src="img/头像 男孩.png" /></div>
+					<div class="xingxi" style="flex-basis: 80%;">都妃旗舰店
+						<p class="text" style="text-overflow: ellipsis;">下午好，我们欢迎你的加入
+						</p>
+					</div>
+					<div class="shijain"> 18:30</div>
+				</div>
+				<div class="div02" >
+					<div style="flex-basis: 18%;"> <img src="img/头像 男孩.png" /></div>
+					<div class="xingxi" style="flex-basis: 80%;">都妃旗舰店
+						<p class="text" style="text-overflow: ellipsis;">下午好，我们欢迎你的加入
+						</p>
+					</div>
+					<div class="shijain"> 18:30</div>
+				</div>
+				<div class="div02" >
+					<div style="flex-basis: 18%;"> <img src="img/头像 女孩(1).png" /></div>
+					<div class="xingxi" style="flex-basis: 80%;">都妃旗舰店
+						<p class="text">下午好，我们欢迎你的加入。。。</p>
+					</div>
+					<div class="shijain"> 18:30</div>
+				</div>
+				<div class="div02" >
+					<div style="flex-basis: 18%;"> <img src="img/头像 女孩(1).png" /></div>
+					<div class="xingxi" style="flex-basis: 80%;">都妃旗舰店
+						<p class="text">下午好，我们欢迎你的加入。。。</p>
+					</div>
+					<div class="shijain"> 18:30</div>
+				</div>
+				<div class="div02" >
+					<div style="flex-basis: 18%;"> <img src="img/头像 男孩.png" /></div>
+					<div class="xingxi" style="flex-basis: 80%;">都妃旗舰店
+						<p class="text">下午好，我们欢迎你的加入。。。</p>
+					</div>
+					<div class="shijain"> 18:30</div>
+				</div>
+				<div class="div02" >
+					<div style="flex-basis: 18%;"> <img src="img/头像 女孩.png" /></div>
+					<div class="xingxi" style="flex-basis: 80%;">都妃旗舰店
+						<p class="text">下午好，我们欢迎你的加入。。。</p>
+					</div>
+					<div class="shijain"> 后天</div>
+				</div>
+				<div class="div02" >
+					<div style="flex-basis: 18%;"><img src="img/头像 男孩.png" /></div>
+					<div class="xingxi" style="flex-basis: 80%;">都妃旗舰店
+						<p class="text">下午好，我们欢迎你的加入。。。</p>
+					</div>
+					<div class="shijain"> 18:30</div>
+				</div>
+				<div class="div02" >
+					<div style="flex-basis: 18%;"> <img src="img/头像 女孩(2).png" /></div>
+					<div class="xingxi" style="flex-basis: 80%;">都妃旗舰店
+						<p class="text">下午好，我们欢迎你的加入。。。</p>
+					</div>
+					<div class="shijain"> 18:30</div>
+				</div>
+				<div class="div02">
+					<div style="flex-basis: 18%;"> <img src="img/头像 女孩(2).png" /></div>
+					<div class="xingxi" style="flex-basis: 80%;">都妃旗舰店
+						<p class="text">下午好，我们欢迎你的加入。。。</p>
+					</div>
+					<div class="shijain"> 18:30</div>
+				</div>
+				<div class="div02">
+					<div style="flex-basis: 18%;"> <img src="img/头像 女孩(2).png" /></div>
+					<div class="xingxi" style="flex-basis: 80%;">都妃旗舰店
+						<p class="text">下午好，我们欢迎你的加入。。。</p>
+					</div>
+					<div class="shijain"> 18:30</div>
+				</div>
+				<div class="div02" >
+					<div style="flex-basis: 18%;"> <img src="img/头像 女孩(2).png" /></div>
+					<div class="xingxi" style="flex-basis: 80%;">都妃旗舰店
+						<p class="text">下午好，我们欢迎你的加入。。。</p>
+					</div>
+					<div class="shijain"> 18:30</div>
+				</div>	
+			</div>
+			<div id="div03">
+				<div class="pic02"><img src="img/微信.png" />
+					<p>微信</p>
+				</div>
+				<div class="pic02"><img src="img/通讯录.png" />
+					<p>通讯录</p>
+				</div>
+				<div class="pic02"><img src="img/发现.png" />
+					<p>发现</p>
+				</div>
+				<div class="pic02"><img src="img/我.png" />
+					<p>我</p>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script>
+	var int = self.setInterval("clock()", 50);
+	function clock() {
+		var t = new Date();
+		document.getElementById("div11").innerHTML = t.getHours() + '：' + t.getMinutes();
+	}
+	var test = setInterval("add()", 1000);
+	var count = 1;
+	function add() {
+		if(count == 26) {
+			window.clearInterval(test);
+		} else {
+			var bian = document.getElementById("dianchi");
+			bian.style.width = count + "px";
+			dianchi.innerHTML = Math.round(count*4)  + "%";
+			count++;
+		}
+	}
+</script>

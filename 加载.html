@@ -1,0 +1,30 @@
+<!DOCTYPE=html>  
+<html>  
+<head>  
+	<meta charset="UTF-8">
+<script src="jquery.js" type="text/javascript"></script> 
+<style>
+	.neirong{
+	  position: relative;
+	  left: 500px;
+	}
+</style>
+</head>  
+
+<!--当滚动条的高度加上滚动条到div顶部的高度等于div的可滚动高度时，说明滚动条到底部了-->
+<body>  
+    <div>下拉加载更多</div>  
+    <div class="dakuang" style="height:700px;overflow:auto;">  
+        <div class="neirong" style=' margin-top:20px;color:grey;height:800px'  ><br /><img src="img/头像 女孩.png"/><p style="color: red; font-size: 30px;">我可爱吗</p></div>  
+    </div>  
+</body>  
+</html> 
+<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+<script  type="text/javascript">   
+    $(".dakuang").unbind("scroll").bind("scroll", function(e){  
+        var sum = this.scrollHeight;  
+        if (sum <= $(this).scrollTop() + $(this).height()) {  
+            $(".dakuang").append($(".neirong").clone());  
+        }  
+    });  
+</script>  
